@@ -7,5 +7,8 @@
 - [x] Add environment (ex - Ground, Wall, Object)
 - [x] Publish transforms/joint_state and view in rviz
 - [x] Publish state changes to Unity
+- [x] Connect moveit IK to nbv
+- [ ] Control nbv through moveit
+- [ ] Map controls to moveit
 - [ ] Continuous controls in ROS to Unity
-- [ ] Control directly in Unity?
+- [ ] Real physics simulations in Unity

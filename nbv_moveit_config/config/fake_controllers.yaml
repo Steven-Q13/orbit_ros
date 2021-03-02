@@ -1,0 +1,14 @@
+controller_list:
+  - name: fake_nbv_arm_controller
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+      - joint5
+  - name: fake_nbv_manip_controller
+    joints:
+      - joint6
+initial:  # Define initial robot poses.
+  - group: nbv_arm
+    pose: home

@@ -8,7 +8,7 @@ Currently moves joints through all ranges and publishes cycle_joints"
 '''
 def cycle_joints_nbv():
     # Init publisher for joint messages
-    joint_pub = rospy.Publisher('CycleJoints', JointState, queue_size=10)
+    joint_pub = rospy.Publisher('cycle_joints', JointState, queue_size=10)
 
     # Start node
     rospy.init_node('cycle_joints_nbv')

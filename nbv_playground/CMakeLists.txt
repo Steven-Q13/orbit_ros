@@ -7,7 +7,14 @@ project(nbv_playground)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED)
+find_package(catkin REQUIRED COMPONENTS
+    rospy
+    geometry_msgs
+    moveit_commander
+    moveit_msgs
+    std_msgs
+    sensor_msgs
+)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -156,8 +163,10 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
+  src/pose_control_test.py
   src/cycle_joints_nbv.py
   src/nbv_joint_state_publisher.py
+  src/moveit_tutorial.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

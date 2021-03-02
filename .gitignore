@@ -1,4 +1,4 @@
-# Don't upload urdf files
+# Don't include nbv files
 NBV_SSL/
 *.urdf
 *.stl
@@ -153,4 +153,4 @@ venv.bak/
 *.swo
 
 # Random mac file
-.DS_Store
+.DS_store

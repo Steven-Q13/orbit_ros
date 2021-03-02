@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: nbv_playground
+    relative_path: urdf/nbv.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/nbv.srdf
+  CONFIG:
+    author_name: Steven Queen
+    author_email: sequeen0@gmail.com
+    generated_timestamp: 1614317524
