@@ -1,0 +1,14 @@
+<!--
+    Publishes transforms - try using transform_publisher_nbv.launch instead
+    robot_state_publisher subscribes to joint_state and publishes to tf
+    nbv_joint_state_publisher publishes to joint_state
+-->
+<launch>
+    <!-- Loads urdf to param server for robot_state_publisher -->
+    <param name="robot_description" textfile="$(find nbv_playground)/urdf/nbv.urdf" />
+    <node pkg="nbv_playground" type="nbv_joint_state_publisher.py" name="joint_state">
+    </node>
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+    </node>
+</launch>

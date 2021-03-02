@@ -1,0 +1,15 @@
+<!-- 
+    Launch file for publishing a urdf to the ros_sharp websocket 
+-->
+<launch>
+
+	<include file="$(find file_server)/launch/ros_sharp_communication.launch">
+		<arg name="port" value="9090" />
+	</include>
+
+	<arg name="urdf_file" default="$(find nbv_playground)/urdf/nbv.urdf" />
+	
+	<param name="robot/name" value="NBV" />
+	<param name="robot_description" command="cat $(arg urdf_file)" />
+
+</launch>

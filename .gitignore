@@ -1,4 +1,4 @@
-# Dont' upload urdf files
+# Don't upload urdf files
 NBV_SSL/
 *.urdf
 *.stl

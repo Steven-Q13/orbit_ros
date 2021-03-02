@@ -1,0 +1,20 @@
+<!-- 
+    Publishes transform information about the nbv urdf
+    robot_state_publisher publishes to tf topic and subscribes to joint_states 
+    joint_state_publisher subscribes to set_param:cycle_joints_nbv and publishes to joint_states
+    cycle_joints_nbv publishes to cycle_joints
+-->
+<launch>
+    <!-- urdf of nbv for joint_state_publisher and robot_state_publisher -->
+    <param name="robot_description" textfile="$(find nbv_playground)/urdf/nbv.urdf" />
+    <!-- Tells joint_state what topic to listen on for JointState msgs -->
+    <rosparam param="source_list">["CycleJoints"]</rosparam>
+    <node pkg="nbv_playground" type="cycle_joints_nbv.py" name="cycle_joints">
+    </node>
+
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state">
+    </node>
+
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" >
+    </node>
+</launch>

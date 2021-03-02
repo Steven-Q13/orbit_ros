@@ -1,0 +1,13 @@
+<!-- 
+    Launch file for publishing a urdf to the ros_sharp websocket 
+-->
+<launch>
+
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+		<arg name="port" value="9090" />
+	</include>
+
+    <include file="$(find nbv_playground)/launch/transform_publisher_nbv.launch">
+    </include>
+
+</launch>
