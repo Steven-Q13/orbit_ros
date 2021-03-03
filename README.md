@@ -21,3 +21,5 @@
 ###### - [URDF Basics](https://docs.google.com/document/d/1eFbdPAIeI-K_OsUwiNc7OVCeCCGZXVkgnjlhnf0l-3M/edit?usp=sharing)
 ###### - [Unity Bridge Setup](https://docs.google.com/document/d/11Y83kDMnGAjrytplY0wvIJ3itOdg_PkHfNlFADZHn1U/edit?usp=sharing)
 ###### - [Unity Bridge Tutorial](https://github.com/siemens/ros-sharp/wiki)
+###### - [Moveit Tutorials](https://ros-planning.github.io/moveit_tutorials/)
+###### - [Moveit Tutorials Github](https://github.com/ros-planning/moveit_tutorials)

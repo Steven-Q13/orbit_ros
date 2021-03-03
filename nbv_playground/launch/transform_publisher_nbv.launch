@@ -8,7 +8,7 @@
     <!-- urdf of nbv for joint_state_publisher and robot_state_publisher -->
     <param name="robot_description" textfile="$(find nbv_playground)/urdf/nbv.urdf" />
     <!-- Tells joint_state what topic to listen on for JointState msgs -->
-    <rosparam param="source_list">["CycleJoints"]</rosparam>
+    <rosparam param="source_list">["cycle_joints"]</rosparam>
     <node pkg="nbv_playground" type="cycle_joints_nbv.py" name="cycle_joints">
     </node>
 
