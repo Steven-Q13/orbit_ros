@@ -3,11 +3,13 @@
 from math import pi
 from rospy import ROSInterruptException
 import geometry_msgs.msg
-from moveit_interface import Moveit_Interface
+from moveit_pkg.moveit_interface import Moveit_Interface
+
 
 def main():
     try:
-        print("--- Inbitiating moveit controls ---\n")
+        input("--- Pose Control Test Ready ---")
+        print("--- Inbitiating moveit controls ---")
         nbv_control = Moveit_Interface()
         
         pose0 = nbv_control.get_pose()

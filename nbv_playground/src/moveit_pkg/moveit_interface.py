@@ -10,6 +10,8 @@ from math import pi, dist, fabs, cos
 from std_msgs.msg import String
 from moveit_commander.conversions import pose_to_list
 
+def work():
+    print("Work")
 
 # Call methods within a try: ... except rospy.ROSInterruptException: ...
 #  except KeyboardInterrupt: ...
