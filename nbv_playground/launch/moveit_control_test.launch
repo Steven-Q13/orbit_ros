@@ -1,0 +1,8 @@
+<launch>
+  <include file="$(find nbv_playground)/launch/moveit.launch"> 
+    <arg name="info" value="true" />
+  </include>
+
+  <node name="moveit_test" pkg="nbv_playground" type="pose_control_test.py">
+  </node>
+</launch>
