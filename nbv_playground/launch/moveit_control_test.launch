@@ -3,6 +3,10 @@
     <arg name="info" value="true" />
   </include>
 
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+    <arg name="port" value="9090" />
+  </include>
+
   <node name="moveit_test" pkg="nbv_playground" type="pose_control_test.py">
   </node>
 </launch>
